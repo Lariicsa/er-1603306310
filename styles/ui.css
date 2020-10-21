@@ -652,6 +652,41 @@ template {
     font-size: 2.1rem;
     text-align: left;
     margin: 2.4rem 0; }
+  .sidebar__text {
+    font-size: 1.1rem;
+    color: #787878; }
+  .sidebar__icon {
+    background-color: #ffffff;
+    border-radius: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1.8rem;
+    width: 1.8rem;
+    position: relative;
+    overflow: hidden; }
+    .sidebar__icon:before {
+      content: '';
+      background-color: #ef5050;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: 0.6rem;
+      position: absolute;
+      top: 0.6rem;
+      left: auto; }
+    .sidebar__icon:after {
+      content: '';
+      background-color: #6c97f5;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: 0.6rem;
+      position: absolute;
+      bottom: 0;
+      left: auto; }
   .sidebar__menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -681,3 +716,14 @@ template {
           color: #787878; }
         .sidebar__menu > li > a.active {
           color: #787878; }
+  .sidebar__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%; }
