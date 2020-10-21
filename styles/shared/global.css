@@ -99,7 +99,7 @@ ul {
   height: 100%;
   min-height: 100vh; }
 
-.main-container {
+.container__main {
   background-color: #fefefe;
   margin: 0;
   padding: 1rem;
