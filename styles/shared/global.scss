@@ -42,16 +42,10 @@ h3 {
 
 h1 {
   font-size: 6.4rem;
-  @include mobile {
-    font-size: 4rem;
-  }
 }
 
 h2 {
-  font-size: 5.6rem;
-  @include mobile {
-    font-size: 3.2rem;
-  }
+  font-size: $regular-size;
 }
 
 h3 {
@@ -91,7 +85,7 @@ ul {
 .container__main {
   background-color: $secondary;
   margin: 0;
-  padding: 1rem;
+  padding: 0;
   flex-direction: row;
   justify-content: center;
   align-items: center;
