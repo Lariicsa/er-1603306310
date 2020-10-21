@@ -130,3 +130,29 @@
     font-weight: $bold;
   }
 }
+
+.button__buy {
+  background-color: $text-color;
+  border: none;
+  border-radius: 3rem;
+  font-size: $medium-size;
+  color: $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 8.4rem;
+  height: 2.4rem;
+
+  &:hover {
+    background-color: $border;
+    color: $text-color;
+    cursor: pointer;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

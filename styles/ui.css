@@ -745,6 +745,32 @@ template {
   color: #000;
   font-weight: 700; }
 
+.button__buy {
+  background-color: #000;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 8.4rem;
+  height: 2.4rem; }
+  .button__buy:hover {
+    background-color: #c5c5c5;
+    color: #000;
+    cursor: pointer; }
+  .button__buy:active, .button__buy:focus {
+    outline: none; }
+
 .sidebar {
   background-color: #f0f0f0;
   display: -webkit-box;
