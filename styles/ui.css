@@ -544,12 +544,15 @@ template {
   height: 3.4rem;
   background-color: transparent;
   position: relative; }
-  .dropdown.border:after {
+  .dropdown.border:before {
     background-color: #cdcdcd;
     border: none;
     content: "";
     height: 100%;
-    width: 0.2rem; }
+    width: 0.2rem;
+    position: absolute;
+    right: -1.6rem;
+    top: 0; }
   .dropdown:after {
     content: "";
     display: -webkit-box;

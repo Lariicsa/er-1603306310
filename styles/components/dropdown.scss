@@ -10,12 +10,15 @@
   position: relative;
 
   &.border {
-    &:after {
+    &:before {
       background-color: $border-2;
       border: none;
       content: "";
       height: 100%;
       width: 0.2rem;
+      position: absolute;
+      right: -1.6rem;
+      top: 0;
     }
   }
 
