@@ -631,7 +631,11 @@ template {
   min-width: 31rem;
   height: 100%;
   min-height: 100vh; }
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      display: none; } }
   .sidebar__inner {
+    border-right: 0.1rem solid #c5c5c5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -642,16 +646,16 @@ template {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: 3.4rem;
-    width: 100%;
-    height: 100%; }
+    width: 27.2rem;
+    height: 100vh; }
   .sidebar__title {
     font-size: 2.1rem;
     text-align: left;
-    margin: 2.4rem 0; }
+    margin: 13.8rem 0 2.4rem 0; }
   .sidebar__text {
     font-size: 1.1rem;
     color: #787878; }
