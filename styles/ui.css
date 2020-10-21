@@ -31,7 +31,7 @@ h2,
 h3 {
   margin: 1.6rem 0;
   font-weight: 700; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 599px) {
     h1,
     h2,
     h3 {
@@ -139,7 +139,7 @@ ul {
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     width: 50%; }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 599px) {
       .colHalf {
         -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
@@ -551,7 +551,7 @@ template {
     height: 100%;
     width: 0.2rem;
     position: absolute;
-    right: -1.6rem;
+    right: -1.2rem;
     top: 0; }
   .dropdown:after {
     content: "";
@@ -715,9 +715,20 @@ template {
     max-height: 32rem;
     border-top: 0.1rem solid #cdcdcd;
     border-bottom: 0.1rem solid #cdcdcd; }
+    @media screen and (max-width: 599px) {
+      .row.top {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        max-height: 100%; } }
   .row.bottom {
     height: calc(100vh - 32rem);
     min-height: 32rem; }
+    @media screen and (max-width: 599px) {
+      .row.bottom {
+        min-height: 20rem;
+        height: auto; } }
   .row__left {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -726,6 +737,9 @@ template {
     -ms-flex-pack: start;
     justify-content: flex-start;
     width: 27rem; }
+    @media screen and (max-width: 599px) {
+      .row__left {
+        width: 100%; } }
     .row__left-inner {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -746,11 +760,17 @@ template {
     align-items: flex-end;
     width: calc(100% - 27rem);
     height: auto; }
+    @media screen and (max-width: 599px) {
+      .row__right {
+        width: 100%; } }
     .row__right > img {
       display: block;
       margin: auto;
       max-width: 100%;
       height: 31rem; }
+      @media screen and (max-width: 599px) {
+        .row__right > img {
+          height: 24rem; } }
     .bottom .row__right {
       -webkit-box-align: start;
       -ms-flex-align: start;
@@ -772,12 +792,12 @@ template {
     grid-row-gap: 0;
     height: 32rem;
     width: 100%; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 599px) {
       .row__items {
-        -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr); } }
-    @media screen and (max-width: 400px) {
-      .row__items {
+        margin-bottom: 1.6rem;
+        height: 6rem;
+        -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
         grid-column-gap: 0; } }
     .row__items > li {
       border: 0.1rem solid #cdcdcd;
@@ -793,17 +813,31 @@ template {
       align-items: center;
       height: 10.6rem;
       width: 100%; }
+      @media screen and (max-width: 599px) {
+        .row__items > li {
+          height: 6rem; } }
       .row__items > li:nth-child(1), .row__items > li:nth-child(2) {
         border-top: none;
         border-bottom: none; }
+        @media screen and (max-width: 599px) {
+          .row__items > li:nth-child(1), .row__items > li:nth-child(2) {
+            border-top: 0.1rem solid #cdcdcd;
+            border-bottom: 0.1rem solid #cdcdcd; } }
       .row__items > li:nth-child(5), .row__items > li:nth-child(6) {
         border-top: none;
         border-bottom: none; }
+        @media screen and (max-width: 599px) {
+          .row__items > li:nth-child(5), .row__items > li:nth-child(6) {
+            border-top: 0.1rem solid #cdcdcd;
+            border-bottom: 0.1rem solid #cdcdcd; } }
       .row__items > li > img {
         display: block;
         margin: auto;
         max-width: 100%;
         height: 8rem; }
+        @media screen and (max-width: 599px) {
+          .row__items > li > img {
+            height: 5.2rem; } }
 
 .text__info {
   font-size: 1rem;
@@ -902,7 +936,7 @@ template {
   min-width: 31rem;
   height: 100vh;
   min-height: 64rem; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1023px) {
     .sidebar {
       display: none; } }
   .sidebar__inner {
