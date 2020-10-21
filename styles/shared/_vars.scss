@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+//Font
+$bold: 700;
+$regular: 400;
+$font-main: "Lato", sans-serif;
+
+//Font-size
+$small-size: 1rem;
+$medium-size: 1.1rem;
+$regular-size: 2.1rem;
+
+//Colors
+$primary: #f0f0f0;
+$secondary: #fefefe;
+$text-color: #000;
+$accent: #787878;
+
+//Larges
+$large: 100%;
+$medium: 48%;
+$small: 31%;
+$maxwidth-inner-containner: 1200px;
+
+//Breakpoints
+$mobile: 401px !default;
+$tablet: 769px !default;
+$desktop: 1025px !default;

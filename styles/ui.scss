@@ -1,0 +1,9 @@
+//Global styles
+@import "./shared/mixins.scss";
+@import "./shared/vars.scss";
+@import "./shared/global.scss";
+@import "./shared/normalize.scss";
+
+//Components styles
+@import "./components/shared.scss";
+@import "./components/sidebar.scss";
