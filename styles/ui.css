@@ -112,7 +112,7 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: calc(100% - 30rem);
+  height: calc(100% - 30.8rem);
   min-height: 100vh;
   width: 100%; }
 
@@ -531,8 +531,10 @@ template {
 [hidden] {
   display: none; }
 
-.sidebar {
+.searcher {
   background-color: #f0f0f0;
+  border: none;
+  border-bottom: 0.1rem solid #787878;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,16 +542,112 @@ template {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 2.4rem;
-  width: 30rem;
+  padding: 0 2.4rem 0 0;
+  font-size: 1.6rem;
+  text-indent: 4rem;
+  height: 100%;
+  width: 100%; }
+  .searcher:focus {
+    outline: 0; }
+  .searcher__texthelp {
+    font-size: 1.1rem;
+    color: #787878;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; }
+  .searcher__icon {
+    text-indent: -9000px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='17' viewBox='0 0 22 17'%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M21.07 7.604H.887c-.49 0-.887.397-.887.887s.397.887.887.887H21.07c.49 0 .887-.397.887-.887s-.397-.887-.887-.887z' transform='matrix(-1 0 0 1 22 0)'/%3E%3Cpath d='M21.697 7.864L14.13.295c-.347-.346-.908-.346-1.255 0-.346.347-.346.908 0 1.255l6.942 6.941-6.942 6.942c-.346.346-.346.908 0 1.254.173.173.4.26.627.26.227 0 .455-.087.628-.26l7.568-7.569c.347-.346.347-.908 0-1.254z' transform='matrix(-1 0 0 1 22 0)'/%3E%3C/g%3E%3C/svg%3E%0A");
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background-color: #000;
+    background-size: 60%;
+    background-position: center;
+    border-radius: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 1.8rem;
+    width: 1.8rem;
+    position: absolute;
+    right: 0;
+    top: -0.6rem; }
+    .searcher__icon:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+  .searcher__wrapper {
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 4rem 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+    height: 2.4rem;
+    position: relative; }
+
+.searcher__wrapper:hover .searcher__texthelp,
+.searcher:focus .searcher__texthelp {
+  color: #000;
+  font-weight: bold; }
+
+.sidebar {
+  background-color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 0;
+  width: 31rem;
+  min-width: 31rem;
   height: 100%;
   min-height: 100vh; }
+  .sidebar__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 3.4rem;
+    width: 100%;
+    height: 100%; }
   .sidebar__title {
     font-size: 2.1rem;
     text-align: left;
