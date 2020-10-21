@@ -683,6 +683,8 @@ template {
       -ms-flex-align: start;
       align-items: flex-start;
       height: 100%; }
+  .row__details {
+    margin-top: 11.4rem; }
   .row__items {
     display: -ms-grid;
     display: grid;
@@ -735,7 +737,13 @@ template {
   color: #787878; }
 
 .text__title {
-  margin-top: 5.2rem; }
+  margin-top: 5.2rem;
+  text-transform: capitalize; }
+
+.text__price {
+  font-size: 400;
+  color: #000;
+  font-weight: 700; }
 
 .sidebar {
   background-color: #f0f0f0;

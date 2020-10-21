@@ -61,6 +61,11 @@
       height: 100%;
     }
   }
+
+  &__details {
+    margin-top: 11.4rem;
+  }
+
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -116,5 +121,12 @@
 
   &__title {
     margin-top: 5.2rem;
+    text-transform: capitalize;
+  }
+
+  &__price {
+    font-size: $regular;
+    color: $text-color;
+    font-weight: $bold;
   }
 }
