@@ -650,9 +650,7 @@ template {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    width: 40%;
-    min-width: 27rem;
-    max-width: 32rem; }
+    width: 27rem; }
     .row__left-inner {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -671,7 +669,7 @@ template {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    width: 60%;
+    width: calc(100% - 27rem);
     height: auto; }
     .row__right > img {
       display: block;

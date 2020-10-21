@@ -27,9 +27,9 @@
   &__left {
     display: flex;
     justify-content: flex-start;
-    width: 40%;
-    min-width: 27rem;
-    max-width: 32rem;
+    
+    width: 27rem;
+
 
     &-inner {
       display: flex;
@@ -46,7 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 60%;
+    width: calc(100% - 27rem);
     height: auto;
 
     & > img {
