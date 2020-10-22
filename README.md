@@ -1,6 +1,6 @@
-# Simple respoinsive layout
+# Simple responsive layout
 
-This is just an example HTML & CSS (sass power)
+This is just an example HTML & CSS (with sass power)
 
 ## Demo link
 
