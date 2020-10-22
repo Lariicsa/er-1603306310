@@ -4,7 +4,7 @@ This is just an example HTML & CSS (with sass power)
 
 ## Demo link
 
-[Here is the template](https://lariicsa.github.io/er-1603306310/)
+[Here is the template deployed](https://lariicsa.github.io/er-1603306310/)
 
 
 
