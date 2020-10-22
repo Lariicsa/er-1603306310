@@ -711,6 +711,7 @@ template {
     border-bottom: 0.1rem solid #cdcdcd; }
     @media screen and (max-width: 599px) {
       .row.top {
+        border-top: none;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -833,6 +834,9 @@ template {
           .row__items > li:nth-child(5), .row__items > li:nth-child(6) {
             border-top: 0.1rem solid #cdcdcd;
             border-bottom: 0.1rem solid #cdcdcd; } }
+      @media screen and (max-width: 599px) {
+        .row__items > li:nth-child(6) {
+          border-right: none; } }
       .row__items > li > img {
         display: block;
         margin: auto;
@@ -937,7 +941,25 @@ template {
   padding: 0;
   width: 31rem;
   height: 100vh;
-  min-height: 64rem; }
+  min-height: 64rem;
+  position: relative; }
+  .sidebar::after {
+    display: none; }
+    @media screen and (max-width: 1023px) {
+      .sidebar::after {
+        display: inline-block;
+        content: "...";
+        font-size: 2.1rem;
+        color: #c5c5c5;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        height: 1.8rem;
+        width: auto;
+        position: absolute;
+        top: 30%;
+        right: 0.2rem;
+        z-index: 6; } }
   @media screen and (max-width: 1023px) {
     .sidebar {
       -webkit-transform: translateX(-27.2rem);
@@ -949,7 +971,8 @@ template {
       position: absolute;
       top: 0;
       left: 0;
-      z-index: 4; }
+      z-index: 4;
+      height: 100%; }
       .sidebar:hover {
         -webkit-transform: translateX(-2rem);
         -ms-transform: translateX(-2rem);
@@ -975,6 +998,9 @@ template {
     padding: 3.4rem;
     width: 27.2rem;
     height: 100vh; }
+    @media screen and (max-width: 1023px) {
+      .sidebar__inner {
+        height: 100%; } }
   .sidebar__title {
     font-size: 2.1rem;
     text-align: left;
@@ -993,7 +1019,7 @@ template {
     position: relative;
     overflow: hidden; }
     .sidebar__icon:before {
-      content: '';
+      content: "";
       background-color: #ef5050;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1004,7 +1030,7 @@ template {
       top: 0.6rem;
       left: auto; }
     .sidebar__icon:after {
-      content: '';
+      content: "";
       background-color: #6c97f5;
       display: -webkit-box;
       display: -ms-flexbox;

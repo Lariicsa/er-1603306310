@@ -19,6 +19,7 @@
     border-bottom: 0.1rem solid $border-2;
 
     @include mobile {
+      border-top: none;
       flex-direction: column;
       max-height: 100%;
     }
@@ -138,6 +139,11 @@
         @include mobile {
           border-top: 0.1rem solid $border-2;
           border-bottom: 0.1rem solid $border-2;
+        }
+      }
+      &:nth-child(6) {
+        @include mobile {
+          border-right: none;
         }
       }
 
